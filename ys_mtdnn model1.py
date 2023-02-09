@@ -1,3 +1,8 @@
+
+#model 1 is comparing the output layer (4 neuron) against 1 toxicity y value
+
+
+
 import numpy as np
 import pandas as pd
 #from numpy import mean
@@ -17,9 +22,7 @@ from torchvision import datasets, transforms
 from torch.utils.data import DataLoader
 from torch.utils.data import Dataset
 
-'''
-model 1 is comparing the output layer (4 neuron) against 1 toxicity y value
-'''
+
 
 #for mtdnn, we train all
 T1 = np.load ("npy inputs\lc50dm_train_x_ssl.npy")
