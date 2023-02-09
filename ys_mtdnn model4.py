@@ -1,3 +1,6 @@
+#model 4 is comparing the 1 neuron from output layer against its specific toxicity y value
+
+
 import numpy as np
 import pandas as pd
 import tensorflow as tf
@@ -15,9 +18,7 @@ from torch.utils.data import DataLoader
 from torch.utils.data import Dataset
 from torch.autograd import Variable
 
-'''
-model 4 is comparing the 1 neuron from output layer against its specific toxicity y value
-'''
+
 
 #for mtdnn, we train all datasets tgt
 T1 = np.load ("npy inputs\lc50dm_train_x_ssl.npy")
