@@ -16,7 +16,7 @@ from torch.autograd import Variable
 
 '''
 similar to model4
-MSE is calculated via dataset - not batch size 8
+BUT MSE is calculated via dataset - not batch size 8 #the original paper uses batch size 8 but i am testing this according to eqn 9
 (ie MSE1 = criterion(all dataset1 y_hat, all dataset actual y-values))
 include shuffling
 '''
@@ -142,7 +142,7 @@ num_epoch = 5 #2000
 count_epoch = 0
 loss_list = []
 
-#summary
+#summary for the model
 #every epoch, we will do the following for each task:
 #obtain all the predictions for task n and compare it against the actual values to get the MSE for task n
 #multiply it with the number of molecules per task
